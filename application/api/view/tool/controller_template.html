@@ -1,0 +1,63 @@
+<pre>
+
+use app\api\model\{$modelName|camelize}Model;
+
+class {$modelName|camelize}Controller extends BaseController {
+
+	// 新增
+	public function add{$modelName|camelize}() {
+		//TODO 建议加验证器
+
+		$effectRow = {$modelName|camelize}Model::insert{$modelName|camelize}();
+		if ($effectRow != 1) {
+			return $this->fail("新增失败");
+		}
+		return $this->ok();
+	}
+
+	// 删除(物理删除)
+	public function delete{$modelName|camelize}() {
+		//TODO 建议加验证器
+
+		$effectRow = {$modelName|camelize}Model::delete{$modelName|camelize}();
+		if ($effectRow != 1) {
+			return $this->fail("删除失败");
+		}
+		return $this->ok();
+	}
+
+	// 更新（支持逻辑删除）
+	public function update{$modelName|camelize}() {
+		//TODO 建议加验证器
+
+		$effectRow = {$modelName|camelize}Model::update{$modelName|camelize}();
+		if ($effectRow != 1) {
+			return $this->fail("删除失败");
+		}
+		return $this->ok();
+	}
+
+	// 获取列表(分页)
+	public function get{$modelName|camelize}List() {
+		//TODO 建议加验证器
+
+		$data = {$modelName|camelize}Model::get{$modelName|camelize}List();
+		if (empty($data->items())) {
+			return $this->fail("列表无数据");
+		}
+		return $this->ok($data);
+	}
+
+	// 获取详情
+	public function get{$modelName|camelize}Detail() {
+		//TODO 建议加验证器
+
+		$data = {$modelName|camelize}Model::get{$modelName|camelize}Detail();
+		if (empty($data)) {
+			return $this->fail("无查询结果");
+		}
+		return $this->ok($data);
+	}
+
+}
+</pre>
