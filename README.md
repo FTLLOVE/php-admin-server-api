@@ -1,17 +1,9 @@
-验证器
-1. 高级写法
-protected $rule = [
-    ['name','require|max:10', '名称不能为空|名称的最大长度不能超过10位'],
-];
-2. 场景使用
-protected $scene = [
-        'edit'  =>  ['nwame','age'],
-];
- 
-3. 接口新增(getMenuDetail)
+# php-system-admin API文档手册
 
+### 前言
 
-eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvd3d3LnFpaHVpc2hvdS5jb20iLCJhdWQiOiJodHRwczpcL1wvd3d3LnFpaHVpc2hvdS5jb20iLCJpYXQiOjE1OTgyNDkyNzUsIm5iZiI6MTU5ODI0OTI3NSwiZGF0YSI6eyJ1c2VySWQiOiI5ODc2NTQzMjEiLCJ1c2VybmFtZSI6ImZ0bCJ9fQ.mnf2z1BNFOoea2ntXRUDZTOkKYtiUAIlqfZNFIo0kwU
-
-
+> 本项目采用的技术是ThinkPHP 5.0+MYSQL 5.7进行开发。与之配套的项目是:[vue-system-admin-project](https://github.com/FTLLOVE/vue-system-admin-project)。
+> 目前源代码都已经开放出来。已经使用GitBook电子书的方式将接口文档开放出来。目的就是让前端朋友们只关注前端的业务开发，就能够开发。而不需要掌握前端和后端的技能才能够开发，如果有朋友对前后端都感兴趣，那也可以都看看。实现的技术不管是前端还是后端，都有对应的配套项目和文档与之对应，不会让项目变的杂乱无章。由于开发和设计就我一个人，所以更新的速度可能会有点慢。谅解哈😀😀😀
+>
+> 如果大家觉得我这个写的还算有意思或则能够帮助到您，希望您能够支持一下我，给我点个❤️
 
