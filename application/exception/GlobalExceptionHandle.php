@@ -1,11 +1,4 @@
 <?php
-/**
- * @fileName GlobalExceptionHandle.php
- * @author sprouts
- * @date 2020/5/19 22:04
- * @description 全局异常捕获
- */
-
 
 namespace app\exception;
 
@@ -22,9 +15,9 @@ class GlobalExceptionHandle extends Handle {
 	public function render(Exception $e) {
 		if ($e instanceof CustomException) {
 			$result = [
-				"code" => 400,
-				"message" => "请求错误",
-				"data" => $e->data
+				"code" => $e -> code,
+				"message" => $e -> data,
+				"data" => ""
 			];
 		} else if ($e instanceof HttpException) {
 			$result = [

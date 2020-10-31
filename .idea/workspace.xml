@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d1d7d55f-c819-4824-ab68-52796bd96a0d" name="Default Changelist" comment="提交代码">
+      <change afterPath="$PROJECT_DIR$/.idea/besovideo_company.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/api/controller/BannerController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/api/controller/CategoryController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/api/controller/FrontController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/api/controller/IntroductionCategoryController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/api/controller/IntroductionController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/api/controller/MockController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/api/controller/NewsCategoryController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/api/controller/NewsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/api/controller/ProductController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/api/controller/ProgrammeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/api/controller/SupportController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/api/controller/TechnologyController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/api/model/BannerModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/api/model/BottomBannerModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/api/model/CategoryModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/api/model/ImageModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/api/model/IntroductionCategoryModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/api/model/IntroductionModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/api/model/NewsCategoryModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/api/model/NewsModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/api/model/ProductCategoryModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/api/model/ProductModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/api/model/ProgrammeModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/api/model/TechnologyModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/util/QiniuUtil.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/validate/BannerValidate.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/validate/CategoryValidate.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/validate/ContentValidate.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/validate/ProductShowValidate.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/validate/ProductValidate.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/validate/TechnologyValidate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php-admin.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/api/controller/BaseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/api/controller/BaseController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/api/controller/DataBaseController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/api/controller/DepartmentController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/api/controller/Index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/api/controller/LogController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/api/controller/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/api/controller/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/api/controller/MenuController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/api/controller/PostController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/api/controller/RoleController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/api/controller/ToolController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/api/controller/UserController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/api/model/DepartmentModel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/api/model/LogModel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/api/model/MenuModel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/api/model/PostModel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/api/model/RoleMenuModel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/api/model/RoleModel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/api/model/UserModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/api/model/UserModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/api/model/UserRoleModel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/api/view/tool/api_template.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/api/view/tool/controller_template.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/api/view/tool/model_template.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/api/view/tool/vue_template.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/common/CORS.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/common/CORS.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/common/ResponseData.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/common/ResponseData.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/enum/ScopeEnum.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/enum/ScopeEnum.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/exception/CustomException.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/exception/CustomException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/exception/GlobalExceptionHandle.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/exception/GlobalExceptionHandle.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/route.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/route.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/util/HttpUtil.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/util/Token.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/util/Token.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/util/TreeUtil.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/util/TreeUtil.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/validate/BaseValidate.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/validate/BaseValidate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/validate/DepartmentValidate.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/validate/IdValidate.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/validate/IdValidate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/validate/LoginValidate.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/validate/LoginValidate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/validate/MenuValidate.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/validate/ModelValidate.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/validate/PasswordValidate.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/validate/PostValidate.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/validate/RoleValidate.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/validate/StatusValidate.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/validate/StatusValidate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/validate/UserValidate.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/icon_avatar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/library/think/cache/driver/Redis.php" beforeDir="false" afterPath="$PROJECT_DIR$/thinkphp/library/think/cache/driver/Redis.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <executable path="composer" />
+    </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="composer.json" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/application/api/controller/FrontController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+  </component>
+  <component name="PhpServers">
+    <servers>
+      <server host="localhost" id="98f4c5a6-ce8d-45ca-9019-28e95e25c4a8" name="server" />
+    </servers>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/topthink/think-mongo" />
+      <path value="$PROJECT_DIR$/vendor/topthink/think-installer" />
+      <path value="$PROJECT_DIR$/vendor/topthink/think-worker" />
+      <path value="$PROJECT_DIR$/vendor/topthink/think-captcha" />
+      <path value="$PROJECT_DIR$/vendor/topthink/think-image" />
+      <path value="$PROJECT_DIR$/vendor/workerman/workerman" />
+      <path value="$PROJECT_DIR$/vendor/topthink/think-queue" />
+      <path value="$PROJECT_DIR$/vendor/topthink/think-migration" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/topthink/think-oracle" />
+      <path value="$PROJECT_DIR$/vendor/topthink/think-helper" />
+      <path value="$PROJECT_DIR$/vendor/firebase/php-jwt" />
+      <path value="$PROJECT_DIR$/vendor/phpoffice/phpexcel" />
+      <path value="$PROJECT_DIR$/vendor/qiniu-php-sdk-7.2.2/src" />
+      <path value="$PROJECT_DIR$/vendor/qiniu-php-sdk-7.2.2/tests" />
+      <path value="$PROJECT_DIR$/vendor/qiniu-php-sdk-7.2.2/examples" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1chpp9xOnt6OQASYn5FELpbLKwl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/application/api/model" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/application/api/model" />
+      <recent name="$PROJECT_DIR$/application/api/controller" />
+      <recent name="$PROJECT_DIR$/application/validate" />
+      <recent name="$PROJECT_DIR$/public/static/img" />
+      <recent name="$PROJECT_DIR$/vendor" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/application/api" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="server" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="server" start_url="http://localhost:8888/besovideo_company/public/index.php">
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d1d7d55f-c819-4824-ab68-52796bd96a0d" name="Default Changelist" comment="" />
+      <created>1590990859802</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1590990859802</updated>
+      <workItem from="1590990861009" duration="9587000" />
+      <workItem from="1591013921746" duration="11949000" />
+      <workItem from="1591073911055" duration="11887000" />
+      <workItem from="1591146232220" duration="10003000" />
+      <workItem from="1591239835924" duration="11821000" />
+      <workItem from="1591280630310" duration="6832000" />
+      <workItem from="1591325901033" duration="18000" />
+      <workItem from="1591326325418" duration="13167000" />
+      <workItem from="1591361271900" duration="8005000" />
+      <workItem from="1591411072119" duration="7825000" />
+      <workItem from="1591584229442" duration="50000" />
+      <workItem from="1591584682337" duration="21000" />
+      <workItem from="1591585791979" duration="2754000" />
+      <workItem from="1591618691219" duration="896000" />
+      <workItem from="1591681652641" duration="2494000" />
+      <workItem from="1591710565074" duration="6732000" />
+      <workItem from="1591753567816" duration="8014000" />
+      <workItem from="1591791034692" duration="7000" />
+      <workItem from="1591791335538" duration="1139000" />
+      <workItem from="1591863253297" duration="39000" />
+      <workItem from="1591891624943" duration="37000" />
+      <workItem from="1591891683579" duration="60000" />
+      <workItem from="1594630010147" duration="4000" />
+      <workItem from="1594630031826" duration="27000" />
+      <workItem from="1601005450018" duration="4000" />
+      <workItem from="1601005728129" duration="43000" />
+      <workItem from="1601005851393" duration="14807000" />
+      <workItem from="1601448850178" duration="146000" />
+      <workItem from="1601865534219" duration="24430000" />
+      <workItem from="1601981930284" duration="15036000" />
+      <workItem from="1602553950481" duration="277000" />
+      <workItem from="1602641614682" duration="296000" />
+      <workItem from="1602763116361" duration="18760000" />
+      <workItem from="1603110466916" duration="13000" />
+      <workItem from="1603197945675" duration="4306000" />
+      <workItem from="1603269930901" duration="180000" />
+      <workItem from="1603451592295" duration="322000" />
+      <workItem from="1603453009461" duration="23000" />
+      <workItem from="1603453326220" duration="9000" />
+      <workItem from="1603454757516" duration="2000" />
+      <workItem from="1603548727162" duration="714000" />
+      <workItem from="1603549583828" duration="924000" />
+      <workItem from="1604065511702" duration="20920000" />
+    </task>
+    <task id="LOCAL-00001" summary="完善用户管理模块">
+      <created>1591029782945</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1591029782945</updated>
+    </task>
+    <task id="LOCAL-00002" summary="提交菜单管理部分">
+      <created>1591090731901</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1591090731901</updated>
+    </task>
+    <task id="LOCAL-00003" summary="调整部分代码">
+      <created>1591240637395</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1591240637395</updated>
+    </task>
+    <task id="LOCAL-00004" summary="修改代码">
+      <created>1591262152776</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1591262152776</updated>
+    </task>
+    <task id="LOCAL-00005" summary="修改用户，新增岗位管理，部门管理">
+      <created>1591287430799</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1591287430799</updated>
+    </task>
+    <task id="LOCAL-00006" summary="用户详情修改">
+      <created>1591338013736</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1591338013736</updated>
+    </task>
+    <task id="LOCAL-00007" summary="跨域处理，修改部分代码">
+      <created>1591369627420</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1591369627420</updated>
+    </task>
+    <task id="LOCAL-00008" summary="提交代码">
+      <created>1591783671165</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1591783671165</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="完善用户管理模块" />
+    <MESSAGE value="提交菜单管理部分" />
+    <MESSAGE value="调整部分代码" />
+    <MESSAGE value="修改代码" />
+    <MESSAGE value="修改用户，新增岗位管理，部门管理" />
+    <MESSAGE value="用户详情修改" />
+    <MESSAGE value="跨域处理，修改部分代码" />
+    <MESSAGE value="提交代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="提交代码" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="220" y="23" width="1000" height="877" key="#Intentions" timestamp="1604137206090">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="220" y="23" width="1000" height="877" key="#Intentions/0.23.1440.877@0.23.1440.877" timestamp="1604137206090" />
+    <state x="204" y="43" key="#Servers" timestamp="1601018031809">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="204" y="43" key="#Servers/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1601018031809" />
+    <state x="180" y="118" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601018037493">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="180" y="118" key="#com.intellij.execution.impl.EditConfigurationsDialog/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1601018037493" />
+    <state x="402" y="254" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601019665996">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="402" y="254" key="#com.intellij.fileTypes.FileTypeChooser/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1601019665996" />
+    <state x="372" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1603199247182">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="372" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1440.900@0.0.1440.900" timestamp="1602816122338" />
+    <state x="372" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1440.877@0.23.1440.877" timestamp="1603199247182" />
+    <state x="372" y="166" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1601022692131" />
+    <state x="392" y="168" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1604115232337">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="392" y="149" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.900@0.0.1440.900" timestamp="1602816175070" />
+    <state x="392" y="168" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1440.877@0.23.1440.877" timestamp="1604115232337" />
+    <state x="392" y="168" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1601022978062" />
+    <state width="793" height="567" key="DebuggerActiveHint" timestamp="1604123517024">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="793" height="567" key="DebuggerActiveHint/0.23.1440.877@0.23.1440.877" timestamp="1604123517024" />
+    <state width="793" height="567" key="DebuggerActiveHint/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1601020654697" />
+    <state width="1388" height="75" key="GridCell.Tab.0.bottom" timestamp="1604124211024">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1388" height="75" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1604124211024" />
+    <state width="1388" height="254" key="GridCell.Tab.0.bottom/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1601082663821" />
+    <state width="1388" height="75" key="GridCell.Tab.0.center" timestamp="1604124211023">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1388" height="75" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1604124211023" />
+    <state width="1388" height="254" key="GridCell.Tab.0.center/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1601082663815" />
+    <state width="1388" height="75" key="GridCell.Tab.0.left" timestamp="1604124211023">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1388" height="75" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1604124211023" />
+    <state width="1388" height="254" key="GridCell.Tab.0.left/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1601082663812" />
+    <state width="1388" height="75" key="GridCell.Tab.0.right" timestamp="1604124211023">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1388" height="75" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1604124211023" />
+    <state width="1388" height="254" key="GridCell.Tab.0.right/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1601082663818" />
+    <state width="1388" height="75" key="GridCell.Tab.1.bottom" timestamp="1604124211024">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1388" height="75" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1604124211024" />
+    <state width="1388" height="254" key="GridCell.Tab.1.bottom/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1601082663831" />
+    <state width="1388" height="75" key="GridCell.Tab.1.center" timestamp="1604124211024">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1388" height="75" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1604124211024" />
+    <state width="1388" height="254" key="GridCell.Tab.1.center/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1601082663827" />
+    <state width="1388" height="75" key="GridCell.Tab.1.left" timestamp="1604124211024">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1388" height="75" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1604124211024" />
+    <state width="1388" height="254" key="GridCell.Tab.1.left/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1601082663824" />
+    <state width="1388" height="75" key="GridCell.Tab.1.right" timestamp="1604124211024">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1388" height="75" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1604124211024" />
+    <state width="1388" height="254" key="GridCell.Tab.1.right/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1601082663829" />
+    <state x="322" y="143" key="NewPhpClassDialog" timestamp="1604154815091">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="322" y="123" key="NewPhpClassDialog/0.0.1440.900@0.0.1440.900" timestamp="1602817922991" />
+    <state x="322" y="143" key="NewPhpClassDialog/0.23.1440.877@0.23.1440.877" timestamp="1604154815091" />
+    <state x="322" y="143" key="NewPhpClassDialog/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1601026991484" />
+    <state x="129" y="23" width="1216" height="877" key="SettingsEditor" timestamp="1604137200936">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="129" y="23" width="1216" height="877" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1604137200936" />
+    <state x="0" y="23" width="1216" height="877" key="SettingsEditor/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1601025240154" />
+    <state x="562" y="308" width="867" height="592" key="find.popup" timestamp="1603549771952">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="562" y="308" width="867" height="592" key="find.popup/0.23.1440.877@0.23.1440.877" timestamp="1603549771952" />
+    <state x="347" y="178" width="867" height="566" key="find.popup/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1601016645078" />
+    <state x="301" y="23" width="838" height="877" key="search.everywhere.popup" timestamp="1604127219112">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="301" y="0" width="838" height="900" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1602819036330" />
+    <state x="301" y="23" width="838" height="877" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1604127219112" />
+    <state x="301" y="23" width="838" height="877" key="search.everywhere.popup/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1601025122183" />
+  </component>
+</project>

@@ -11,143 +11,240 @@
 
 use think\Route;
 
-// 验证码管理
-Route::group("api/captcha", function () {
+// 管理端
+Route::group("api/admin", function () {
 
-	// 生成验证码
-	Route::get("captcha", "api/LoginController/captcha");
+	// 产品管理
+	Route::group("product", function () {
+
+		// 新增产品
+		Route::post("addProduct", "api/ProductController/addProduct");
+
+		// 更新产品
+		Route::put("updateProduct", "api/ProductController/updateProduct");
+
+		// 删除产品
+		Route::delete("deleteProduct", "api/ProductController/deleteProduct");
+
+		// 获取产品详情
+		Route::get("getProductDetail", "api/ProductController/getProductDetail");
+
+		// 获取产品列表
+		Route::get("getProductList", "api/ProductController/getProductList");
+
+		// 更新中英文显示状态
+		Route::put("updateProductIsShow", "api/ProductController/updateProductIsShow");
+
+	});
+
+	// 产品分类管理
+	Route::group("category", function () {
+
+		// 新增产品分类
+		Route::post("addCategory", "api/CategoryController/addCategory");
+
+		// 更新产品分类
+		Route::put("updateCategory", "api/CategoryController/updateCategory");
+
+		// 更新产品分类状态
+		Route::put("updateCategoryStatus", "api/CategoryController/updateCategoryStatus");
+
+		// 删除产品分类
+		Route::delete("deleteCategory", "api/CategoryController/deleteCategory");
+
+		// 获取产品分类详情
+		Route::get("getCategoryDetail", "api/CategoryController/getCategoryDetail");
+
+		// 获取产品分类列表
+		Route::get("getCategoryList", "api/CategoryController/getCategoryList");
+
+		// 获取分类列表->产品管理
+		Route::get("getCategoryListForProduct", "api/CategoryController/getCategoryListForProduct");
+
+	});
+
+	// 内容介绍分类管理
+	Route::group("introductionCategory", function () {
+
+		// 新增内容介绍分类
+		Route::post("addIntroCategory", "api/IntroductionCategoryController/addIntroCategory");
+
+		// 更新内容介绍分类
+		Route::put("updateIntroCategory", "api/IntroductionCategoryController/updateIntroCategory");
+
+		// 更新内容介绍分类状态
+		Route::put("updateIntroCategoryStatus", "api/IntroductionCategoryController/updateIntroCategoryStatus");
+
+		// 删除内容介绍分类
+		Route::delete("deleteIntroCategory", "api/IntroductionCategoryController/deleteIntroCategory");
+
+		// 获取内容介绍分类详情
+		Route::get("getCategoryDetail", "api/IntroductionCategoryController/getIntroCategoryDetail");
+
+		// 获取内容介绍分类列表
+		Route::get("getIntroCategoryList", "api/IntroductionCategoryController/getIntroCategoryList");
+
+	});
+
+
+	// 内容介绍管理
+	Route::group("introduction", function () {
+
+		// 新增内容介绍
+		Route::post("addIntro", "api/IntroductionController/addIntro");
+
+		// 更新内容介绍
+		Route::put("updateIntro", "api/IntroductionController/updateIntro");
+
+		// 更新内容介绍状态
+		Route::put("updateIntroStatus", "api/IntroductionController/updateIntroStatus");
+
+		// 删除内容介绍
+		Route::delete("deleteIntro", "api/IntroductionController/deleteIntro");
+
+		// 获取内容介绍详情
+		Route::get("getIntroDetail", "api/IntroductionController/getIntroDetail");
+
+		// 获取内容介绍列表
+		Route::get("getIntroList", "api/IntroductionController/getIntroList");
+
+	});
+
+	// 新闻资讯分类管理
+	Route::group("newsCategory", function () {
+
+		// 新增新闻资讯分类
+		Route::post("addNewsCategory", "api/NewsCategoryController/addNewsCategory");
+
+		// 更新新闻资讯分类
+		Route::put("updateNewsCategory", "api/NewsCategoryController/updateNewsCategory");
+
+		// 更新新闻资讯分类状态
+		Route::put("updateNewsCategoryStatus", "api/NewsCategoryController/updateNewsCategoryStatus");
+
+		// 删除新闻资讯分类
+		Route::delete("deleteNewsCategory", "api/NewsCategoryController/deleteNewsCategory");
+
+		// 获取新闻资讯分类
+		Route::get("getNewsCategoryDetail", "api/NewsCategoryController/getNewsCategoryDetail");
+
+		// 获取新闻资讯分类列表
+		Route::get("getNewsCategoryList", "api/NewsCategoryController/getNewsCategoryList");
+
+	});
+
+	// 新闻资讯管理
+	Route::group("news", function () {
+
+		// 新增新闻资讯
+		Route::post("addNews", "api/NewsController/addNews");
+
+		// 更新新闻资讯
+		Route::put("updateNews", "api/NewsController/updateNews");
+
+		// 更新新闻资讯状态
+		Route::put("updateNewsStatus", "api/NewsController/updateNewsStatus");
+
+		// 删除新闻资讯
+		Route::delete("deleteNews", "api/NewsController/deleteNews");
+
+		// 获取新闻资讯详情
+		Route::get("getNewsDetail", "api/NewsController/getNewsDetail");
+
+		// 获取新闻资讯列表
+		Route::get("getNewsList", "api/NewsController/getNewsList");
+
+	});
+
+
+	// 技术文章
+	Route::group("technology", function () {
+
+		// 新增技术文章
+		Route::post("addTechnology", "api/TechnologyController/addTechnology");
+
+		// 更新技术文章
+		Route::put("updateTechnology", "api/TechnologyController/updateTechnology");
+
+		// 更新技术文章状态
+		Route::put("updateTechnologyStatus", "api/TechnologyController/updateTechnologyStatus");
+
+		// 删除技术文章
+		Route::delete("deleteTechnology", "api/TechnologyController/deleteTechnology");
+
+		// 获取技术文章详情
+		Route::get("getTechnologyDetail", "api/TechnologyController/getTechnologyDetail");
+
+		// 获取技术文章列表
+		Route::get("getTechnologyList", "api/TechnologyController/getTechnologyList");
+
+	});
+
+	// 轮播管理
+	Route::group("banner", function () {
+
+		// 新增轮播
+		Route::post("addBanner", "api/BannerController/addBanner");
+
+		// 更新轮播
+		Route::put("updateBanner", "api/BannerController/updateBanner");
+
+		// 更新轮播状态
+		Route::put("updateBannerStatus", "api/BannerController/updateBannerStatus");
+
+		// 删除轮播
+		Route::delete("deleteBanner", "api/BannerController/deleteBanner");
+
+		// 获取轮播详情
+		Route::get("getBannerDetail", "api/BannerController/getBannerDetail");
+
+		// 获取轮播列表
+		Route::get("getBannerList", "api/BannerController/getBannerList");
+
+	});
+
+
+	// 图片管理
+	Route::group("support", function () {
+		// 上传图片
+		Route::post("uploadImage", "api/SupportController/uploadImage");
+
+		// 删除图片
+		Route::delete("deleteImage", "api/SupportController/deleteImage");
+	});
+
+	// 登录管理
+	Route::group("login", function () {
+		Route::post("login", "api/LoginController/login");
+	});
 
 });
 
-// 登录管理
-Route::group("api/login", function () {
 
-	// 登录
-	Route::post("login", "api/LoginController/login");
+// 门户
+Route::group("api/front", function () {
 
-});
+	// 首页基础数据
+	Route::get("getData", "api/FrontController/getData");
 
-// 用户管理
-Route::group("api/user", function () {
+	// 首页新品推荐产品列表
+	Route::get("getHomeProductList", "api/FrontController/getHomeProductList");
 
-	// 获取用户列表
-	Route::get("getUserList", "api/UserController/getUserList");
+	// 技术文章列表
+	Route::get("getTechnologyList", "api/FrontController/getTechnologyList");
 
-	// 新增用户
-	Route::post("addUser", "api/UserController/addUser");
+	// 获取产品详情
+	Route::get("getProductDetail", "api/FrontController/getProductDetail");
 
-	// 更新用户
-	Route::put("updateUser", "api/UserController/updateUser");
+	// 获取底部bottom的详情
+	Route::get("getBottomBannerDetail", "api/FrontController/getBottomBannerDetail");
 
-	// 重置密码
-	Route::put("resetPassword", "api/UserController/resetPassword");
-
-	// 获取用户详情
-	Route::get("getUserDetail", "api/UserController/getUserDetail");
-
-});
-
-// 角色管理
-Route::group("api/role", function () {
-
-	// 获取角色列表
-	Route::get("getRoleList", "api/RoleController/getRoleList");
-
-	// 新增角色
-	Route::post("addRole", "api/RoleController/addRole");
-
-	// 更新角色
-	Route::put("updateRole", "api/RoleController/updateRole");
-
-	// 获取角色详情
-	Route::get("getRoleDetail", "api/RoleController/getRoleDetail");
-
-});
-
-// 菜单管理
-Route::group("api/menu", function () {
-
-	// 新增菜单
-	Route::post("addMenu", "api/MenuController/addMenu");
-
-	// 更新菜单
-	Route::put("updateMenu", "api/MenuController/updateMenu");
-
-	// 获取菜单列表
-	Route::get("getMenuList", "api/MenuController/getMenuList");
-
-	Route::get("getMenuDetail", "api/MenuController/getMenuDetail");
-
-});
-
-// 部门管理
-Route::group("api/department", function () {
-
-	// 新增部门
-	Route::post("addDepartment", "api/DepartmentController/addDepartment");
-
-	// 更新部门
-	Route::put("updateDepartment", "api/DepartmentController/updateDepartment");
-
-	// 获取部门详情
-	Route::get("getDepartmentDetail", "api/DepartmentController/getDepartmentDetail");
-
-	// 获取部门列表
-	Route::get("getDepartmentList", "api/DepartmentController/getDepartmentList");
-});
-
-// 岗位管理
-Route::group("api/post", function () {
-
-	// 新增岗位
-	Route::post("addPost", "api/PostController/addPost");
-
-	// 更新岗位
-	Route::put("updatePost", "api/PostController/updatePost");
-
-	// 获取岗位详情
-	Route::get("getPostDetail", "api/PostController/getPostDetail");
-
-	// 获取岗位列表
-	Route::get("getPostList", "api/PostController/getPostList");
-});
-
-// 数据库管理
-Route::group("api/database", function () {
-
-	// 获取数据库所有表
-	Route::get("showTables", "api/DataBaseController/showTables");
-
-	// 删除表
-	Route::delete("deleteTable", "api/DataBaseController/deleteTable");
-
-	// 获取数据库表详情信息
-	Route::get("getTableDetail", "api/DataBaseController/getTableDetail");
-
-});
-
-// 自动生成模板管理
-Route::group("api/tool", function () {
-
-	// 生成模型模板
-	Route::get("createModelTemplate", "api/ToolController/createModelTemplate");
-
-	// 生成控制层模板
-	Route::get("createControllerTemplate", "api/ToolController/createControllerTemplate");
-
-	// 生成api模板
-	Route::get("createApiTemplate", "api/ToolController/createApiTemplate");
-
-	// 生成vue模板
-	Route::get("createVueTemplate", "api/ToolController/createVueTemplate");
-});
-
-// 日志管理
-Route::group("api/log", function () {
-	// 获取日志列表
-	Route::get("getLogList", "api/LogController/getLogList");
+	// 获取解决方案列表
+	Route::get("getProgrammeList", "api/FrontController/getProgrammeList");
 
 });
 
 
-Route::get("index", "api/Index/index");
+Route::get("json", "api/MockController/jsonToProduct");
+Route::get("jsonToImage", "api/MockController/jsonToImage");
+Route::get("mockProductCategory", "api/MockController/mockProductCategory");

@@ -172,7 +172,7 @@ return [
 		// 日志保存目录
 		'path' => LOG_PATH,
 		// 日志记录级别
-		'level' => [''],
+		'level' => [],
 	],
 
 	// +----------------------------------------------------------------------
@@ -189,7 +189,7 @@ return [
 
 	'cache' => [
 		// 驱动方式
-		'type' => 'File',
+		'type' => 'file',
 		// 缓存保存目录
 		'path' => CACHE_PATH,
 		// 缓存前缀
@@ -209,7 +209,7 @@ return [
 		// SESSION 前缀
 		'prefix' => 'think',
 		// 驱动方式 支持redis memcache memcached
-		'type' => '',
+		'type' => 'redis',
 		// 是否自动开启 SESSION
 		'auto_start' => true,
 	],
@@ -250,8 +250,14 @@ return [
 	],
 	"redis" => [
 		"type" => "redis",
-		"host" => "127.0.0.1",
+		"host" => "localhost",
 		"port" => "6379",
 		"password" => ""
 	],
+	'qiniu' => [
+		'accesskey' => '3BrP3J9dfq2j6jF7Avk7qFNeitlmxEFV3_hpBxi8',
+		'secretkey' => 'P_J1DOSPE2OeQbYB3LM1yFHRq3vxFXSbE9_B8KLU',
+		'bucket' => 'qihuishou',
+		'DOMAIN' => 'http://qn.qihuishou.club/'
+	]
 ];

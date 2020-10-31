@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/tp5-rbac.iml" filepath="$PROJECT_DIR$/.idea/tp5-rbac.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/besovideo_company.iml" filepath="$PROJECT_DIR$/.idea/besovideo_company.iml" />
     </modules>
   </component>
 </project>

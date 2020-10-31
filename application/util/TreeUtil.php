@@ -1,11 +1,4 @@
 <?php
-/**
- * @fileName TreeUtil.php
- * @author sprouts <1139556759@qq.com>
- * @date 2020/6/2 15:11
- * @description 树工具
- */
-
 
 namespace app\util;
 
@@ -22,7 +15,7 @@ class TreeUtil {
 	static function buildTree($array, $pid = 0) {
 		$tree = array();
 		foreach ($array as $key => $value) {
-			if ($value['pid'] == $pid) {
+			if ($value['parent_id'] == $pid) {
 				$value['children'] = self::buildTree($array, $value['id']);
 				if (!$value['children']) {
 					unset($value['children']);

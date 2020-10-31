@@ -1,11 +1,4 @@
 <?php
-/**
- * @fileName Token.php
- * @author sprouts <1139556759@qq.com>
- * @date 2020/6/13 14:27
- * @description
- */
-
 
 namespace app\util;
 
@@ -72,22 +65,22 @@ class Token {
 			$returnData['status'] = "101";//101=签名不正确
 			$returnData['msg'] = $e->getMessage();
 			$returnData['data'] = "";//返回的数据
-			ResponseData::Success($returnData);
+			return ResponseData::Success($returnData);
 		} catch (BeforeValidException $e) {  // 签名在某个时间点之后才能用
 			$returnData['status'] = "102";
 			$returnData['msg'] = $e->getMessage();
 			$returnData['data'] = "";//返回的数据
-			ResponseData::Success($returnData);
+			return ResponseData::Success($returnData);
 		} catch (ExpiredException $e) {  // token过期nn
 			$returnData['status'] = "103";//103=签名不正确
 			$returnData['msg'] = $e->getMessage();
 			$returnData['data'] = "";//返回的数据
-			ResponseData::Success($returnData);
+			return ResponseData::Success($returnData);
 		} catch (Exception $e) {  //其他错误
 			$returnData['status'] = "199";//199=签名不正确
 			$returnData['msg'] = $e->getMessage();
 			$returnData['data'] = "";//返回的数据
-			ResponseData::Success($returnData);
+			return ResponseData::Success($returnData);
 		}
 	}
 
@@ -101,12 +94,12 @@ class Token {
 		$request = Request::instance();
 		$header = $request->header();
 		if (!isset($header['token'])) {
-			throw new CustomException(ScopeEnum::AUTHORIZED_ERROR);
+			throw new CustomException(ScopeEnum::AUTHORIZED_ERROR, 401);
 		}
 		$jwt = $header['token'];
 		$checkToken = self::vertifyToken($jwt);
 		if (empty($checkToken)) {
-			throw new CustomException(ScopeEnum::AUTHORIZED_ERROR);
+			throw new CustomException(ScopeEnum::AUTHORIZED_ERROR, 401);
 		}
 		return $checkToken['data']['data'];
 

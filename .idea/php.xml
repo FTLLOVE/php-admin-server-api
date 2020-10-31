@@ -14,12 +14,11 @@
       <path value="$PROJECT_DIR$/vendor/topthink/think-oracle" />
       <path value="$PROJECT_DIR$/vendor/topthink/think-helper" />
       <path value="$PROJECT_DIR$/vendor/firebase/php-jwt" />
+      <path value="$PROJECT_DIR$/vendor/phpoffice/phpexcel" />
+      <path value="$PROJECT_DIR$/vendor/qiniu-php-sdk-7.2.2/src" />
+      <path value="$PROJECT_DIR$/vendor/qiniu-php-sdk-7.2.2/tests" />
+      <path value="$PROJECT_DIR$/vendor/qiniu-php-sdk-7.2.2/examples" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="5.5.0" />
-  <component name="PhpUnit">
-    <phpunit_settings>
-      <PhpUnitSettings custom_loader_path="$PROJECT_DIR$/vendor/autoload.php" />
-    </phpunit_settings>
-  </component>
 </project>

@@ -1,11 +1,4 @@
 <?php
-/**
- * @fileName UserModel.php
- * @author sprouts <1139556759@qq.com>
- * @date 2020/6/1 14:28
- * @description 用户模型
- */
-
 
 namespace app\api\model;
 
@@ -38,11 +31,14 @@ class UserModel extends Model {
 	 */
 	public function updateOneById() {
 		$params = input("");
-		if (!empty($params['password'])) {
-			$params['password'] = password_hash(input("password"), PASSWORD_BCRYPT);
+		// 更新用户不允许修改密码
+		if (empty($params['password'])) {
+			$user = $this->findOne(input("id"));
+			$params['password'] = $user['password'];
 		}
 		$this->allowField(true)->save($params, ["id" => input("id")]);
 	}
+
 
 	/**
 	 * 重置密码
@@ -90,6 +86,15 @@ class UserModel extends Model {
 		return $this::with(['roles'])
 			->where("id", "=", $userId)
 			->find();
+	}
+
+	/**
+	 * 更新用户状态
+	 */
+	public function updateUserStatus() {
+		$this->save([
+			'status' => input("status")
+		], ['id' => input("id"),]);
 	}
 
 	public function roles() {

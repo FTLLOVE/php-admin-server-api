@@ -1,11 +1,4 @@
 <?php
-/**
- * @fileName BaseValidate.php
- * @author sprouts <1139556759@qq.com>
- * @date 2020/6/1 16:53
- * @description 基类验证器
- */
-
 
 namespace app\validate;
 

@@ -1,12 +1,5 @@
 <?php
 
-/**
- * @fileName CustomException.php
- * @author sprouts <1139556759@qq.com>
- * @date 2020/6/2 13:26
- * @description 自定义异常
- */
-
 namespace app\exception;
 
 use think\Exception;
@@ -14,13 +7,16 @@ use think\Exception;
 class CustomException extends Exception {
 
 	public $data;
+	public $code;
 
 	/**
 	 * CustomException constructor.
 	 * @param $data
+	 * @param int $code
 	 */
-	public function __construct($data = []) {
+	public function __construct($data = [], $code = 0) {
 		$this->data = $data;
+		$this->code = $code;
 	}
 
 

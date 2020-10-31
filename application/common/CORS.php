@@ -1,10 +1,4 @@
 <?php
-/**
- * @fileName CORS.php
- * @author sprouts <1139556759@qq.com>
- * @date 2020/6/5 14:44
- * @description 跨域处理
- */
 
 
 namespace app\common;
