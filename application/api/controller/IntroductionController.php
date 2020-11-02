@@ -17,6 +17,8 @@ use app\validate\IdValidate;
 use app\validate\ContentValidate;
 use app\validate\StatusValidate;
 use think\Db;
+use think\db\exception\DataNotFoundException;
+use think\db\exception\ModelNotFoundException;
 use think\exception\DbException;
 
 class IntroductionController extends BaseController {
@@ -24,17 +26,25 @@ class IntroductionController extends BaseController {
 	/**
 	 * 新增介绍内容
 	 * @return array
-	 * @throws CustomException
+	 * @throws DbException
+	 * @throws DataNotFoundException
+	 * @throws ModelNotFoundException
 	 */
 	public function addIntro() {
+		$model = new IntroductionModel();
 
-		Db::transaction(function () {
-			$data = input("");
-			$model = new IntroductionModel();
+		$data = Db::table("introduction")
+			->where("category_id", input("category_id"))
+			->where("status", "1")
+			->find();
+		if ($data != null) {
+			return $this->fail("已经有对应的条目,请勿重复添加");
+		} else {
 			$model->allowField(true)->save(input(""));
-		});
-		return $this->ok();
+			return $this->ok();
+		}
 	}
+
 
 	/**
 	 * 更新介绍内容
@@ -52,6 +62,14 @@ class IntroductionController extends BaseController {
 
 		if (empty($data)) {
 			return $this->fail(ScopeEnum::INTRODUCTION_EMPTY);
+		}
+
+		$data = Db::table("introduction")
+			->where("category_id", input("category_id"))
+			->where("status", "1")
+			->find();
+		if ($data != null && $data['id'] != input("id")) {
+			return $this->fail("已经有对应的条目,请勿重复添加");
 		}
 
 		$model->allowField(true)->save(input(""), [
@@ -118,6 +136,12 @@ class IntroductionController extends BaseController {
 		if (empty($data)) {
 			return $this->fail(ScopeEnum::INTRODUCTION_EMPTY);
 		}
+
+		$model->save([
+			'pv' => $data['pv'] + 1
+		], [
+			'id' => input("id")
+		]);
 
 		return $this->ok($data);
 	}

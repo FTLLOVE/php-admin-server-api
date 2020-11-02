@@ -74,12 +74,17 @@ class FrontController extends Controller {
 	 */
 	public function getTechnologyList() {
 		$technologyModel = new TechnologyModel();
-		$data = $technologyModel->findAll();
+		$data = $technologyModel
+			->where("status", "1")
+			->order("create_time desc")
+			->paginate(input("size"), false, [
+				"page" => input("page")
+			]);
 		return $data;
 	}
 
 	/**
-	 * 获取产品列表
+	 * TODO 获取产品列表
 	 */
 	public function getProductList() {
 		$productModel = new ProductModel();

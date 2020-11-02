@@ -121,6 +121,12 @@ class NewsController extends BaseController {
 			return $this->fail(ScopeEnum::News_EMPTY);
 		}
 
+		$model->save([
+			'pv' => $data['pv'] + 1
+		], [
+			'id' => input("id")
+		]);
+
 		return $this->ok($data);
 	}
 

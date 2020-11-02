@@ -18,6 +18,8 @@ use app\validate\CategoryValidate;
 use app\validate\IdValidate;
 use app\validate\StatusValidate;
 use think\Db;
+use think\db\exception\DataNotFoundException;
+use think\db\exception\ModelNotFoundException;
 use think\exception\DbException;
 
 class IntroductionCategoryController extends BaseController {
@@ -137,6 +139,20 @@ class IntroductionCategoryController extends BaseController {
 				"page" => input("page")
 			]);
 		$data = TreeUtil::buildTree($data->items(), 0);
+		return $this->ok($data);
+	}
+
+	/**
+	 * 获取子节点列表
+	 * @return array
+	 * @throws DbException
+	 * @throws DataNotFoundException
+	 * @throws ModelNotFoundException
+	 */
+	public function getChildIntroList() {
+		$model = new IntroductionCategoryModel();
+
+		$data = $model->where("parent_id", "1")->select();
 		return $this->ok($data);
 	}
 }

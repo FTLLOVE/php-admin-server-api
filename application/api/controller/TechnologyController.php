@@ -131,8 +131,16 @@ class TechnologyController extends BaseController {
 	 */
 	public function getTechnologyList() {
 		$model = new TechnologyModel();
-		$data = $model->findAll();
-		$data = $data->hidden(['category.create_time', 'category.update_time']);
+		$title = input("title");
+		$content = input("content");
+		$where['title'] = array("like", "%$title%");
+		$where['content'] = array("like", "%$content%");
+		$data = $model
+			->where($where)
+			->order("create_time desc")
+			->paginate(input("size"), false, [
+				"page" => input("page")
+			]);
 		return $this->ok($data);
 	}
 }

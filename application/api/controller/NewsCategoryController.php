@@ -57,7 +57,9 @@ class NewsCategoryController extends BaseController {
 			return $this->fail(ScopeEnum::PRODUCT_CATEGORY_EMPTY);
 		}
 
-		$model->allowField(true)->save(input(""));
+		$model->allowField(true)->save(input(""), [
+			"id" => input("id")
+		]);
 
 		return $this->ok();
 	}
@@ -135,7 +137,7 @@ class NewsCategoryController extends BaseController {
 			->paginate(input("size"), false, [
 				"page" => input("page")
 			]);
-		$data = TreeUtil::buildTree($data->items(), 0);
+		$data = TreeUtil::buildTree($data->items(), 1);
 		return $this->ok($data);
 	}
 }

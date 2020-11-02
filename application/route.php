@@ -11,10 +11,10 @@
 
 use think\Route;
 
-// 管理端
+// 端
 Route::group("api/admin", function () {
 
-	// 产品管理
+	// 产品
 	Route::group("product", function () {
 
 		// 新增产品
@@ -37,7 +37,7 @@ Route::group("api/admin", function () {
 
 	});
 
-	// 产品分类管理
+	// 产品分类
 	Route::group("category", function () {
 
 		// 新增产品分类
@@ -58,12 +58,13 @@ Route::group("api/admin", function () {
 		// 获取产品分类列表
 		Route::get("getCategoryList", "api/CategoryController/getCategoryList");
 
-		// 获取分类列表->产品管理
+		// 获取分类列表->产品
 		Route::get("getCategoryListForProduct", "api/CategoryController/getCategoryListForProduct");
+
 
 	});
 
-	// 内容介绍分类管理
+	// 内容介绍分类
 	Route::group("introductionCategory", function () {
 
 		// 新增内容介绍分类
@@ -84,10 +85,12 @@ Route::group("api/admin", function () {
 		// 获取内容介绍分类列表
 		Route::get("getIntroCategoryList", "api/IntroductionCategoryController/getIntroCategoryList");
 
+		// 获取子节点列表
+		Route::get("getChildIntroList", "api/IntroductionCategoryController/getChildIntroList");
 	});
 
 
-	// 内容介绍管理
+	// 内容介绍
 	Route::group("introduction", function () {
 
 		// 新增内容介绍
@@ -110,7 +113,7 @@ Route::group("api/admin", function () {
 
 	});
 
-	// 新闻资讯分类管理
+	// 新闻资讯分类
 	Route::group("newsCategory", function () {
 
 		// 新增新闻资讯分类
@@ -133,7 +136,7 @@ Route::group("api/admin", function () {
 
 	});
 
-	// 新闻资讯管理
+	// 新闻资讯
 	Route::group("news", function () {
 
 		// 新增新闻资讯
@@ -155,7 +158,6 @@ Route::group("api/admin", function () {
 		Route::get("getNewsList", "api/NewsController/getNewsList");
 
 	});
-
 
 	// 技术文章
 	Route::group("technology", function () {
@@ -180,7 +182,31 @@ Route::group("api/admin", function () {
 
 	});
 
-	// 轮播管理
+
+	// 解决方案
+	Route::group("programme", function () {
+
+		// 新增解决方案
+		Route::post("addProgramme", "api/ProgrammeController/addProgramme");
+
+		// 更新解决方案
+		Route::put("updateProgramme", "api/ProgrammeController/updateProgramme");
+
+		// 更新解决方案状态
+		Route::put("updateProgrammeStatus", "api/ProgrammeController/updateProgrammeStatus");
+
+		// 删除解决方案
+		Route::delete("deleteProgramme", "api/ProgrammeController/deleteProgramme");
+
+		// 获取解决方案详情
+		Route::get("getProgrammeDetail", "api/ProgrammeController/getProgrammeDetail");
+
+		// 获取解决方案列表
+		Route::get("getProgrammeList", "api/ProgrammeController/getProgrammeList");
+
+	});
+
+	// 轮播
 	Route::group("banner", function () {
 
 		// 新增轮播
@@ -204,7 +230,7 @@ Route::group("api/admin", function () {
 	});
 
 
-	// 图片管理
+	// 图片
 	Route::group("support", function () {
 		// 上传图片
 		Route::post("uploadImage", "api/SupportController/uploadImage");
@@ -213,7 +239,7 @@ Route::group("api/admin", function () {
 		Route::delete("deleteImage", "api/SupportController/deleteImage");
 	});
 
-	// 登录管理
+	// 登录
 	Route::group("login", function () {
 		Route::post("login", "api/LoginController/login");
 	});
@@ -239,7 +265,7 @@ Route::group("api/front", function () {
 	// 获取底部bottom的详情
 	Route::get("getBottomBannerDetail", "api/FrontController/getBottomBannerDetail");
 
-	// 获取解决方案列表
+	// 解决方案列表
 	Route::get("getProgrammeList", "api/FrontController/getProgrammeList");
 
 });

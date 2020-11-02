@@ -12,12 +12,12 @@ namespace app\api\controller;
 
 use app\api\model\NewsductionModel;
 use app\api\model\ProgrammeModel;
+use app\api\model\TechnologyModel;
 use app\enum\ScopeEnum;
 use app\exception\CustomException;
-use app\validate\ContentValidate;
 use app\validate\IdValidate;
-use app\validate\StatusValidate;
 use app\validate\ProgrammeValidate;
+use app\validate\StatusValidate;
 use app\validate\TechnologyValidate;
 use think\Db;
 use think\exception\DbException;
@@ -129,11 +129,20 @@ class ProgrammeController extends BaseController {
 	/**
 	 * 获取解决方案列表
 	 * @return array
+	 * @throws DbException
 	 */
 	public function getProgrammeList() {
 		$model = new ProgrammeModel();
-		$data = $model->findAll();
-		$data = $data->hidden(['category.create_time', 'category.update_time']);
+		$title = input("title");
+		$content = input("content");
+		$where['title'] = array("like", "%$title%");
+		$where['content'] = array("like", "%$content%");
+		$data = $model
+			->where($where)
+			->order("create_time desc")
+			->paginate(input("size"), false, [
+				"page" => input("page")
+			]);
 		return $this->ok($data);
 	}
 }

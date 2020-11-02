@@ -22,7 +22,7 @@ class BaseController extends Controller {
 		];
 	}
 
-	protected function fail($message = '', $code = 401, $data = '') {
+	protected function fail($message = '', $code = 500, $data = '') {
 		return [
 			"code" => $code,
 			"message" => $message,
