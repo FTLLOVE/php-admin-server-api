@@ -95,7 +95,7 @@ class ProductModel extends Model {
 		return $this->hasMany("ImageModel", "product_id", "id");
 	}
 
-	public function getFrontHomeProductList($type, $limit) {
+	public function getFrontHomeProductList($type) {
 		$where = [];
 		// 中文
 		if ($type == 0) {
@@ -109,8 +109,9 @@ class ProductModel extends Model {
 			->where($where)
 			->with(['category', 'image'])
 			->order("create_time desc")
-			->limit(0, $limit)
-			->select();
+			->paginate(input("size"), false, [
+				"page" => input("page")
+			]);
 	}
 
 	public function getFrontProductListByCategory($type) {

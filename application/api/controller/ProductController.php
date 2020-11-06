@@ -30,7 +30,6 @@ class ProductController extends BaseController {
 	public function addProduct() {
 		(new ProductValidate())->goCheck();
 
-
 		Db::transaction(function () {
 			$productModel = new ProductModel();
 

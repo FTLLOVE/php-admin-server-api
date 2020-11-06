@@ -11,7 +11,7 @@
 
 use think\Route;
 
-// 端
+// 管理端
 Route::group("api/admin", function () {
 
 	// 产品
@@ -256,9 +256,6 @@ Route::group("api/front", function () {
 	// 首页新品推荐产品列表
 	Route::get("getHomeProductList", "api/FrontController/getHomeProductList");
 
-	// 技术文章列表
-	Route::get("getTechnologyList", "api/FrontController/getTechnologyList");
-
 	// 获取产品详情
 	Route::get("getProductDetail", "api/FrontController/getProductDetail");
 
@@ -267,6 +264,25 @@ Route::group("api/front", function () {
 
 	// 解决方案列表
 	Route::get("getProgrammeList", "api/FrontController/getProgrammeList");
+
+	// 获取解决方案详情
+	Route::get("getProgrammeDetail", "api/FrontController/getProgrammeDetail");
+
+	// 新闻中心列表
+	Route::get("getNewsList", "api/FrontController/getNewsList");
+
+	Route::get("getNewsCategoryList", "api/FrontController/getNewsCategoryList");
+
+	// 获取新闻中心详情
+	Route::get("getNewsDetail", "api/FrontController/getNewsDetail");
+
+	// 技术文章列表
+	Route::get("getTechnologyList", "api/FrontController/getTechnologyList");
+
+	// 获取文章详情
+	Route::get("getTechnologyDetail", "api/FrontController/getTechnologyDetail");
+
+	Route::get("getIntroDetail", "api/FrontController/getIntroDetail");
 
 });
 

@@ -22,26 +22,22 @@ class SupportController extends BaseController {
 	 * @return array
 	 */
 	public function uploadImage(Request $request) {
-		$arrayFile = $request->file("files");
-		$data = [];
-		foreach ($arrayFile as $File) {
-			$pathImg = "";
-			//移动文件到框架应用更目录的public/uploads/
-			$info = $File->move(ROOT_PATH . 'public' . DS . 'static' . DS . 'img' . DS . date('Y') . DS . date('m-d'), md5(microtime(true)));
-			if ($info) {
-				$pathImg = "/static/img/" . date('Y') . '/' . date('m-d') . '/' . $info->getFilename();
-			}
-			array_push($data, $pathImg);
+		$file = $request->file("file");
+		$pathImg = "";
+		//移动文件到框架应用更目录的public/uploads/
+		$info = $file->move(ROOT_PATH . 'public' . DS . 'static' . DS . 'img' . DS . date('Y') . DS . date('m-d'), md5(microtime(true)));
+		if ($info) {
+			$pathImg = "/static/img/" . date('Y') . '/' . date('m-d') . '/' . $info->getFilename();
 		}
-		return $this->ok($data);
+		$str = 'http://localhost:8888' .$pathImg;
+		return $this->ok($str);
 	}
 
 	/**
 	 * 删除图片
 	 * @throws CustomException
 	 */
-	public
-	function deleteImage() {
+	public function deleteImage() {
 		$imageUrl = input("imageUrl");
 		$bool = QiniuUtil::deleteImage($imageUrl);
 		if ($bool) {

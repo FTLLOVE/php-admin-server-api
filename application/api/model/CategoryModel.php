@@ -82,6 +82,7 @@ class CategoryModel extends Model {
 		if ($status != "") {
 			$where['status'] = $status;
 		}
+		$where['parent_id'] = 1;
 		return $this->where($where)
 			->order("create_time desc")
 			->paginate(input("size"), false, [

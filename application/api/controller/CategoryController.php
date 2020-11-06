@@ -137,7 +137,6 @@ class CategoryController extends BaseController {
 
 		$data = $categoryModel->findAll();
 
-		$data = TreeUtil::buildTree($data->items(), 0);
 		return $this->ok($data);
 	}
 
@@ -151,7 +150,7 @@ class CategoryController extends BaseController {
 	public function getCategoryListForProduct() {
 		$categoryModel = new CategoryModel();
 		$data = $categoryModel->where("parent_id", 1)->select();
-		$data = $data ->hidden(['create_time', 'update_time', 'parent_id', 'status']);
+		$data = $data->hidden(['create_time', 'update_time', 'parent_id', 'status']);
 		return $this->ok($data);
 	}
 
