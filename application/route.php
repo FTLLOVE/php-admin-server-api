@@ -240,9 +240,7 @@ Route::group("api/admin", function () {
 	});
 
 	// 登录
-	Route::group("login", function () {
-		Route::post("login", "api/LoginController/login");
-	});
+	Route::post("login/login", "api/LoginController/login");
 
 });
 
@@ -282,11 +280,15 @@ Route::group("api/front", function () {
 	// 获取文章详情
 	Route::get("getTechnologyDetail", "api/FrontController/getTechnologyDetail");
 
+	// 获取介绍内容详情
 	Route::get("getIntroDetail", "api/FrontController/getIntroDetail");
 
-});
+	// 新增联系我们
+	Route::post("addContact", "api/FrontController/addContact");
 
+});
 
 Route::get("json", "api/MockController/jsonToProduct");
 Route::get("jsonToImage", "api/MockController/jsonToImage");
 Route::get("mockProductCategory", "api/MockController/mockProductCategory");
+Route::post("testQiniu", "api/SupportController/testQiniu");

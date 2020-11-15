@@ -18,6 +18,7 @@
       <path value="$PROJECT_DIR$/vendor/qiniu-php-sdk-7.2.2/src" />
       <path value="$PROJECT_DIR$/vendor/qiniu-php-sdk-7.2.2/tests" />
       <path value="$PROJECT_DIR$/vendor/qiniu-php-sdk-7.2.2/examples" />
+      <path value="$PROJECT_DIR$/vendor/aliyuncs/oss-sdk-php" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="5.5.0" />

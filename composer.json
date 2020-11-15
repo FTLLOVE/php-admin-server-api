@@ -22,7 +22,8 @@
     "topthink/think-image": "^1.0",
     "topthink/think-captcha":"1.0.8",
     "phpoffice/phpexcel": "^1.8",
-    "ext-json": "*"
+    "ext-json": "*",
+    "aliyuncs/oss-sdk-php": "^2.4"
   },
   "autoload": {
     "psr-4": {

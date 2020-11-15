@@ -13,6 +13,7 @@ namespace app\api\controller;
 use app\api\model\BannerModel;
 use app\api\model\BottomBannerModel;
 use app\api\model\CategoryModel;
+use app\api\model\ContactModel;
 use app\api\model\IntroductionCategoryModel;
 use app\api\model\IntroductionModel;
 use app\api\model\NewsCategoryModel;
@@ -20,9 +21,14 @@ use app\api\model\NewsModel;
 use app\api\model\ProductModel;
 use app\api\model\ProgrammeModel;
 use app\api\model\TechnologyModel;
+use app\common\ResponseData;
+use app\exception\CustomException;
 use app\util\TreeUtil;
+use app\validate\ContactValidate;
+use app\validate\TechnologyValidate;
 use think\Controller;
 use think\Db;
+use think\Response;
 
 class FrontController extends Controller {
 
@@ -71,7 +77,7 @@ class FrontController extends Controller {
 			'category.status', 'category.create_time', 'category.update_time', 'category.parent_id',
 			'category.pivot', 'image.product_id'
 		]);
-		return $data;
+		return ResponseData::Success($data);
 	}
 
 
@@ -206,5 +212,22 @@ class FrontController extends Controller {
 		} else {
 			return $data;
 		}
+	}
+
+	/**
+	 * 新增联系我们
+	 * @return array
+	 * @throws CustomException
+	 */
+	public function addContact() {
+
+		(new ContactValidate())->goCheck();
+		$model = new ContactModel();
+		$model->allowField(true)->save(input(""));
+		return [
+			"code" => 200,
+			"message" => "成功",
+			"data" => ""
+		];
 	}
 }

@@ -259,5 +259,12 @@ return [
 		'secretkey' => 'P_J1DOSPE2OeQbYB3LM1yFHRq3vxFXSbE9_B8KLU',
 		'bucket' => 'qihuishou',
 		'DOMAIN' => 'http://qn.qihuishou.club/'
+	],
+	'aliyun_oss' => [
+		'accessKeyId' => 'LTAI4GB2tYDJ2ajfhfSBzzz3',  //您的Access Key ID
+		'accessKeySecret' => '0eU9gtZSPZaBQvekCBNJdBuVHyIE3R',  //您的Access Key Secret
+		'endpoint' => 'oss-cn-qingdao.aliyuncs.com',  //阿里云oss 外网地址endpoint
+		'bucket' => 'besovideo',  //Bucket名称
+		'url' => 'https://besovideo.oss-cn-qingdao.aliyuncs.com'  // 访问的地址
 	]
 ];

@@ -64,7 +64,7 @@ class BannerController extends BaseController {
 		$model = new BannerModel();
 
 		$model->save([
-			"status" => input("staus")
+			"status" => input("status")
 		], [
 			"id" => input("id")
 		]);

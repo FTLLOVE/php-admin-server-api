@@ -10,6 +10,8 @@
 namespace app\api\model;
 
 
+use PDOStatement;
+use think\Collection;
 use think\exception\DbException;
 use think\Model;
 use think\Paginator;
@@ -57,11 +59,11 @@ class ProductModel extends Model {
 	/**
 	 * 获取产品详情
 	 *
-	 * @return ProductModel|null
+	 * @return bool|false|PDOStatement|string|Collection
 	 * @throws DbException
 	 */
 	public function findOne() {
-		$product = $this->with(['category', 'image'])->select(input("id"));
+		$product = $this->with(['category', 'image'])->find(input("id"));
 		if (empty($product)) {
 			return null;
 		}
@@ -95,7 +97,7 @@ class ProductModel extends Model {
 		return $this->hasMany("ImageModel", "product_id", "id");
 	}
 
-	public function getFrontHomeProductList($type) {
+	public function getFrontHomeProductList($type, $limit) {
 		$where = [];
 		// 中文
 		if ($type == 0) {
@@ -109,9 +111,8 @@ class ProductModel extends Model {
 			->where($where)
 			->with(['category', 'image'])
 			->order("create_time desc")
-			->paginate(input("size"), false, [
-				"page" => input("page")
-			]);
+			->limit(0, $limit)
+			->select();
 	}
 
 	public function getFrontProductListByCategory($type) {

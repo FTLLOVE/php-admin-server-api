@@ -11,14 +11,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1d7d55f-c819-4824-ab68-52796bd96a0d" name="Default Changelist" comment="提交代码">
+      <change afterPath="$PROJECT_DIR$/application/api/controller/ContactController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/api/model/ContactModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/util/Oss.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/validate/ContactValidate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/besovideo_company.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/besovideo_company.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/api/controller/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/api/controller/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/api/controller/BannerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/api/controller/BannerController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/api/controller/FrontController.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/api/controller/FrontController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/api/controller/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/api/controller/ProductController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/api/controller/SupportController.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/api/controller/SupportController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/api/model/CategoryModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/api/model/CategoryModel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/api/model/ProductModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/api/model/ProductModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/route.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/route.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,11 +52,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/application/api/controller/FrontController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/application/api/controller/TechnologyController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/application/api/controller/IntroductionController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/application/api/controller/ProgrammeController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/application/api/controller/SupportController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/application/api/controller/IntroductionController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/application/api/controller/TechnologyController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/application/api/controller/ProductController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/application/api/controller/FrontController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
   </component>
   <component name="PhpServers">
     <servers>
@@ -73,6 +82,7 @@
       <path value="$PROJECT_DIR$/vendor/qiniu-php-sdk-7.2.2/src" />
       <path value="$PROJECT_DIR$/vendor/qiniu-php-sdk-7.2.2/tests" />
       <path value="$PROJECT_DIR$/vendor/qiniu-php-sdk-7.2.2/examples" />
+      <path value="$PROJECT_DIR$/vendor/aliyuncs/oss-sdk-php" />
     </include_path>
   </component>
   <component name="ProjectId" id="1chpp9xOnt6OQASYn5FELpbLKwl" />
@@ -91,22 +101,22 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/application/api/model" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/extend" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/application/api/model" />
-      <recent name="$PROJECT_DIR$/application/api/controller" />
-      <recent name="$PROJECT_DIR$/application/validate" />
-      <recent name="$PROJECT_DIR$/public/static/img" />
-      <recent name="$PROJECT_DIR$/vendor" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/application/api" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/extend" />
+      <recent name="$PROJECT_DIR$/application/api/controller" />
+      <recent name="$PROJECT_DIR$/application/api/model" />
+      <recent name="$PROJECT_DIR$/application/validate" />
+      <recent name="$PROJECT_DIR$/public/static/img" />
     </key>
   </component>
   <component name="RunManager">
@@ -167,7 +177,8 @@
       <workItem from="1603548727162" duration="714000" />
       <workItem from="1603549583828" duration="924000" />
       <workItem from="1604065511702" duration="38646000" />
-      <workItem from="1604366638056" duration="16010000" />
+      <workItem from="1604366638056" duration="38036000" />
+      <workItem from="1605319579993" duration="9315000" />
     </task>
     <task id="LOCAL-00001" summary="完善用户管理模块">
       <created>1591029782945</created>
@@ -239,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604327338986</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="提交代码">
+      <created>1604680163348</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1604680163348</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -291,86 +309,100 @@
     <state x="372" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1440.900@0.0.1440.900" timestamp="1602816122338" />
     <state x="372" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1440.877@0.23.1440.877" timestamp="1603199247182" />
     <state x="372" y="166" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1601022692131" />
-    <state x="392" y="168" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1604303112192">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state x="1963" y="198" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605333580184">
+      <screen x="1440" y="23" width="1920" height="1057" />
     </state>
     <state x="392" y="149" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.900@0.0.1440.900" timestamp="1602816175070" />
-    <state x="392" y="168" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1440.877@0.23.1440.877" timestamp="1604303112192" />
+    <state x="392" y="168" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1440.877@0.23.1440.877" timestamp="1604929963030" />
     <state x="392" y="168" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1601022978062" />
-    <state width="793" height="567" key="DebuggerActiveHint" timestamp="1604475472682">
+    <state x="1963" y="198" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1440.23.1920.1057/0.23.1440.877@1440.23.1920.1057" timestamp="1605333580184" />
+    <state width="793" height="567" key="DebuggerActiveHint" timestamp="1605192933863">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="793" height="567" key="DebuggerActiveHint/0.23.1440.877@0.23.1440.877" timestamp="1604475472682" />
+    <state width="793" height="567" key="DebuggerActiveHint/0.23.1440.877@0.23.1440.877" timestamp="1605192933863" />
     <state width="793" height="567" key="DebuggerActiveHint/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1601020654697" />
-    <state width="1388" height="300" key="GridCell.Tab.0.bottom" timestamp="1604576270396">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="1388" height="306" key="GridCell.Tab.0.bottom" timestamp="1605336641050">
+      <screen x="1440" y="23" width="1920" height="1057" />
     </state>
-    <state width="1388" height="300" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1604576270396" />
-    <state width="1388" height="254" key="GridCell.Tab.0.bottom/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1601082663821" />
-    <state width="1388" height="300" key="GridCell.Tab.0.center" timestamp="1604576270395">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="1388" height="306" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1605193467344" />
+    <state width="1388" height="242" key="GridCell.Tab.0.bottom/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1605058726829" />
+    <state width="1388" height="306" key="GridCell.Tab.0.bottom/1440.23.1920.1057/0.23.1440.877@1440.23.1920.1057" timestamp="1605336641050" />
+    <state width="1388" height="306" key="GridCell.Tab.0.center" timestamp="1605336641049">
+      <screen x="1440" y="23" width="1920" height="1057" />
     </state>
-    <state width="1388" height="300" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1604576270395" />
-    <state width="1388" height="254" key="GridCell.Tab.0.center/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1601082663815" />
-    <state width="1388" height="300" key="GridCell.Tab.0.left" timestamp="1604576270395">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="1388" height="306" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1605193467343" />
+    <state width="1388" height="242" key="GridCell.Tab.0.center/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1605058726828" />
+    <state width="1388" height="306" key="GridCell.Tab.0.center/1440.23.1920.1057/0.23.1440.877@1440.23.1920.1057" timestamp="1605336641049" />
+    <state width="1388" height="306" key="GridCell.Tab.0.left" timestamp="1605336641049">
+      <screen x="1440" y="23" width="1920" height="1057" />
     </state>
-    <state width="1388" height="300" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1604576270395" />
-    <state width="1388" height="254" key="GridCell.Tab.0.left/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1601082663812" />
-    <state width="1388" height="300" key="GridCell.Tab.0.right" timestamp="1604576270396">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="1388" height="306" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1605193467343" />
+    <state width="1388" height="242" key="GridCell.Tab.0.left/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1605058726828" />
+    <state width="1388" height="306" key="GridCell.Tab.0.left/1440.23.1920.1057/0.23.1440.877@1440.23.1920.1057" timestamp="1605336641049" />
+    <state width="1388" height="306" key="GridCell.Tab.0.right" timestamp="1605336641050">
+      <screen x="1440" y="23" width="1920" height="1057" />
     </state>
-    <state width="1388" height="300" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1604576270396" />
-    <state width="1388" height="254" key="GridCell.Tab.0.right/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1601082663818" />
-    <state width="1388" height="300" key="GridCell.Tab.1.bottom" timestamp="1604576270396">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="1388" height="306" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1605193467344" />
+    <state width="1388" height="242" key="GridCell.Tab.0.right/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1605058726829" />
+    <state width="1388" height="306" key="GridCell.Tab.0.right/1440.23.1920.1057/0.23.1440.877@1440.23.1920.1057" timestamp="1605336641050" />
+    <state width="1388" height="306" key="GridCell.Tab.1.bottom" timestamp="1605336641051">
+      <screen x="1440" y="23" width="1920" height="1057" />
     </state>
-    <state width="1388" height="300" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1604576270396" />
+    <state width="1388" height="306" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1605193467345" />
     <state width="1388" height="254" key="GridCell.Tab.1.bottom/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1601082663831" />
-    <state width="1388" height="300" key="GridCell.Tab.1.center" timestamp="1604576270396">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="1388" height="306" key="GridCell.Tab.1.bottom/1440.23.1920.1057/0.23.1440.877@1440.23.1920.1057" timestamp="1605336641051" />
+    <state width="1388" height="306" key="GridCell.Tab.1.center" timestamp="1605336641051">
+      <screen x="1440" y="23" width="1920" height="1057" />
     </state>
-    <state width="1388" height="300" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1604576270396" />
+    <state width="1388" height="306" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1605193467345" />
     <state width="1388" height="254" key="GridCell.Tab.1.center/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1601082663827" />
-    <state width="1388" height="300" key="GridCell.Tab.1.left" timestamp="1604576270396">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="1388" height="306" key="GridCell.Tab.1.center/1440.23.1920.1057/0.23.1440.877@1440.23.1920.1057" timestamp="1605336641051" />
+    <state width="1388" height="306" key="GridCell.Tab.1.left" timestamp="1605336641051">
+      <screen x="1440" y="23" width="1920" height="1057" />
     </state>
-    <state width="1388" height="300" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1604576270396" />
+    <state width="1388" height="306" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1605193467345" />
     <state width="1388" height="254" key="GridCell.Tab.1.left/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1601082663824" />
-    <state width="1388" height="300" key="GridCell.Tab.1.right" timestamp="1604576270396">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="1388" height="306" key="GridCell.Tab.1.left/1440.23.1920.1057/0.23.1440.877@1440.23.1920.1057" timestamp="1605336641051" />
+    <state width="1388" height="306" key="GridCell.Tab.1.right" timestamp="1605336641051">
+      <screen x="1440" y="23" width="1920" height="1057" />
     </state>
-    <state width="1388" height="300" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1604576270396" />
+    <state width="1388" height="306" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1605193467345" />
     <state width="1388" height="254" key="GridCell.Tab.1.right/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1601082663829" />
-    <state x="322" y="143" key="NewPhpClassDialog" timestamp="1604154815091">
+    <state width="1388" height="306" key="GridCell.Tab.1.right/1440.23.1920.1057/0.23.1440.877@1440.23.1920.1057" timestamp="1605336641051" />
+    <state x="322" y="143" key="NewPhpClassDialog" timestamp="1605101458974">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="322" y="123" key="NewPhpClassDialog/0.0.1440.900@0.0.1440.900" timestamp="1602817922991" />
-    <state x="322" y="143" key="NewPhpClassDialog/0.23.1440.877@0.23.1440.877" timestamp="1604154815091" />
+    <state x="322" y="143" key="NewPhpClassDialog/0.23.1440.877@0.23.1440.877" timestamp="1605101458974" />
     <state x="322" y="143" key="NewPhpClassDialog/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1601026991484" />
-    <state x="129" y="23" width="1216" height="877" key="SettingsEditor" timestamp="1604665500367">
+    <state x="129" y="23" width="1216" height="877" key="SettingsEditor" timestamp="1605424048285">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="129" y="23" width="1216" height="877" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1604665500367" />
-    <state x="0" y="23" width="1216" height="877" key="SettingsEditor/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1601025240154" />
-    <state x="220" y="138" key="Vcs.Push.Dialog.v2" timestamp="1604327340643">
+    <state x="129" y="23" width="1216" height="877" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1605424048285" />
+    <state x="0" y="23" width="1216" height="877" key="SettingsEditor/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1605058725120" />
+    <state x="1612" y="23" key="SettingsEditor/1440.23.1920.1057/0.23.1440.877@1440.23.1920.1057" timestamp="1605344576211" />
+    <state x="220" y="138" key="Vcs.Push.Dialog.v2" timestamp="1604680165472">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="220" y="138" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1604327340643" />
+    <state x="220" y="138" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1604680165472" />
+    <state width="720" height="438" key="XDebugger.FullValuePopup" timestamp="1605104951502">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="720" height="438" key="XDebugger.FullValuePopup/0.23.1440.877@0.23.1440.877" timestamp="1605104951502" />
     <state x="157" y="134" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1604476884262">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="157" y="134" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.23.1440.877@0.23.1440.877" timestamp="1604476884262" />
-    <state x="562" y="308" width="867" height="592" key="find.popup" timestamp="1604325818634">
+    <state x="562" y="308" width="867" height="592" key="find.popup" timestamp="1605275390003">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="562" y="308" width="867" height="592" key="find.popup/0.23.1440.877@0.23.1440.877" timestamp="1604325818634" />
+    <state x="562" y="308" width="867" height="592" key="find.popup/0.23.1440.877@0.23.1440.877" timestamp="1605275390003" />
     <state x="347" y="178" width="867" height="566" key="find.popup/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1601016645078" />
-    <state x="301" y="23" width="838" height="877" key="search.everywhere.popup" timestamp="1604302195193">
+    <state x="301" y="23" width="838" height="877" key="search.everywhere.popup" timestamp="1605275400273">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="301" y="0" width="838" height="900" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1602819036330" />
-    <state x="301" y="23" width="838" height="877" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1604302195193" />
+    <state x="301" y="23" width="838" height="877" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1605275400273" />
     <state x="301" y="23" width="838" height="877" key="search.everywhere.popup/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1601025122183" />
   </component>
 </project>

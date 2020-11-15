@@ -34,13 +34,25 @@ class ProductController extends BaseController {
 			$productModel = new ProductModel();
 
 			// 插入产品表
-			$productId = $productModel->insertOne();
+			$productModel->allowField(true)->save(input(""));
+			// 产品图片
+			$images = input("images/a");
+			foreach ($images as $v) {
+				Db::table("image")->insert([
+					"img_url" => $v,
+					"product_id" => $productModel->id
+				]);
+			}
 
-			// 删除产品-分类
+			// 插入产品-分类
 			$categoryIds = input("category_id/a");
 			$productCategoryModel = new ProductCategoryModel();
-
-			$productCategoryModel->insertMany($productId, $categoryIds);
+			foreach ($categoryIds as $v) {
+				Db::table("product_category")->insert([
+					"product_id" => $productModel->id,
+					"category_id" => $v
+				]);
+			}
 
 		});
 
@@ -58,7 +70,17 @@ class ProductController extends BaseController {
 
 		Db::transaction(function () {
 			$productModel = new ProductModel();
-			$productModel->updateOne();
+			$productModel->allowField(true)->save(input(""), [
+				'id' => input('id')
+			]);
+			// 图片
+			$images = input("images/a");
+			foreach ($images as $v) {
+				Db::table("image")->insert([
+					"img_url" => $v,
+					"product_id" => input("id")
+				]);
+			}
 
 			// 删除产品-分类
 			Db::table("product_category")->where("product_id", input("id"))->delete();
@@ -66,9 +88,12 @@ class ProductController extends BaseController {
 			// 插入产品-分类
 			$categoryIds = input("category_id/a");
 			$productCategoryModel = new ProductCategoryModel();
-
-			$productCategoryModel->insertMany(input("id"), $categoryIds);
-
+			foreach ($categoryIds as $v) {
+				Db::table("product_category")->insert([
+					"product_id" => input("id"),
+					"category_id" => $v
+				]);
+			}
 		});
 
 		return $this->ok();

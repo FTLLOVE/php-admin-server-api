@@ -10,8 +10,11 @@
 namespace app\api\controller;
 
 
+use app\common\ResponseData;
 use app\exception\CustomException;
+use app\util\Oss;
 use app\util\QiniuUtil;
+use think\Db;
 use think\Request;
 
 class SupportController extends BaseController {
@@ -21,30 +24,20 @@ class SupportController extends BaseController {
 	 * @param Request $request
 	 * @return array
 	 */
-	public function uploadImage(Request $request) {
-		$file = $request->file("file");
-		$pathImg = "";
-		//移动文件到框架应用更目录的public/uploads/
-		$info = $file->move(ROOT_PATH . 'public' . DS . 'static' . DS . 'img' . DS . date('Y') . DS . date('m-d'), md5(microtime(true)));
-		if ($info) {
-			$pathImg = "/static/img/" . date('Y') . '/' . date('m-d') . '/' . $info->getFilename();
-		}
-		$str = 'http://localhost:8888' .$pathImg;
-		return $this->ok($str);
+	public function uploadImage() {
+
+		$file = request()->file('file');
+		$result = Oss::uploadFile('file', $file);
+		return ResponseData::Success($result);
 	}
 
 	/**
 	 * 删除图片
-	 * @throws CustomException
+	 * @return array
 	 */
 	public function deleteImage() {
-		$imageUrl = input("imageUrl");
-		$bool = QiniuUtil::deleteImage($imageUrl);
-		if ($bool) {
-			return $this->ok();
-		} else {
-			return $this->fail("上传失败", 500);
-		}
+		$result = Oss::deleteFile();
+		return ResponseData::Success($result);
 	}
 
 }
